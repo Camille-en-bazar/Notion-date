@@ -5,7 +5,7 @@
       #lbl {
         display: flex;
         font-family: sans-serif;
-        font-size: 14pt;
+        font-size: 15pt;
         color: #b298dc;
         padding: 5px;
         border: 1px solid #ffffff;
@@ -22,7 +22,7 @@
       }
 
       #date{
-          font-size:20pt;
+          font-size:21pt;
           font-weight: bold;
       }
 
