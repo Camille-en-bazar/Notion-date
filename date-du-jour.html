@@ -36,7 +36,7 @@
 </body>
 
 <script>
-    var weekday = new Array(7);
+    const weekday = new Array(7);
     weekday[0] = "Dimanche";
     weekday[1] = "Lundi";
     weekday[2] = "Mardi";
@@ -53,20 +53,20 @@
     var today = new Date();
     var hrs = today.getHours();
     var dayOfWeek = weekday[today.getDay()];
-    var date = `${dayOfWeek}, ${monthNames[today.getMonth()]} ${today.getDate()}, ${today.getFullYear()}`;
+    var date = `${dayOfWeek}, ${monthNames[today.getDate()]} ${today.getMonth()}, ${today.getFullYear()}`;
 
     var greet;
 
     if (hrs < 12)
         greet = 'Hello you ';
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'Un p'tit verre d'eau ? ';
+        greet = "Un p'tit verre d'eau ? ";
     else if (hrs >= 17 && hrs <= 24)
         greet = 'Did you journal today ';
 
     document.getElementById('lbl').innerHTML = `
         <div class="container">
-          <div id="date"> ${date}</div>
+          <div id="date">${date}</div>
           <div class="greeting">${greet}</div>
         <div/>
     `;
